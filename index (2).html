@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- ✏️ 1. Título y descripción (es lo que aparece en Google) -->
+<title>Matías Farías Flores | Ingeniería Civil Industrial</title>
+<meta name="description" content="CV de Matías Farías Flores, estudiante de 4to año de Ingeniería Civil Industrial en la Universidad de La Frontera.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+/* ✏️ COLORES: cambia solo estos valores y todo el sitio se actualiza */
+:root{
+  --bg:#F1F3F6; --surface:#FFFFFF; --ink:#17202B; --muted:#5A6675;
+  --line:#D3D9E1; --accent:#1D5DB8; --tag:#E4EBF6;
+  --font-title:"Barlow Condensed","Arial Narrow",sans-serif;
+  --font-body:"Source Sans 3",Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#12171E;--surface:#1A212B;--ink:#E8ECF1;--muted:#9AA6B5;--line:#2B3441;--accent:#7FAEF5;--tag:#243245}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.6 var(--font-body)}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+h1,h2,h3{font-family:var(--font-title);line-height:1.1;margin:0}
+
+.page{max-width:1060px;margin:0 auto;padding:2.5rem 1.25rem;display:grid;grid-template-columns:290px 1fr;gap:2.5rem}
+
+/* ---------- Columna izquierda ---------- */
+.side{position:sticky;top:2rem;align-self:start}
+.side h1{font-size:2.9rem;font-weight:700;letter-spacing:.01em}
+.role{margin:.6rem 0 1.5rem;color:var(--muted);font-size:1.05rem}
+.side h2{font-size:1.35rem;font-weight:600;margin:1.8rem 0 .6rem;padding-top:1rem;border-top:2px solid var(--ink)}
+.contact,.plain{list-style:none;margin:0;padding:0}
+.contact li,.plain li{padding:.2rem 0;overflow-wrap:anywhere}
+.tags{display:flex;flex-wrap:wrap;gap:.4rem;margin:0;padding:0;list-style:none}
+.tags li{background:var(--tag);padding:.15rem .6rem;border-radius:4px;font-size:.95rem}
+.group{margin:.9rem 0 .35rem;font-weight:600;font-size:.95rem;color:var(--muted)}
+
+/* ---------- Columna derecha ---------- */
+main section{margin-bottom:2.6rem}
+main h2{font-size:1.9rem;font-weight:600;margin-bottom:1.1rem}
+.profile{font-size:1.15rem;max-width:62ch}
+
+/* Línea de tiempo: cada .item es un hito */
+.timeline{border-left:2px solid var(--line);margin-left:.4rem}
+.item{position:relative;padding:0 0 1.8rem 1.6rem}
+.item:last-child{padding-bottom:0}
+.item::before{content:"";position:absolute;left:-7px;top:.45rem;width:12px;height:12px;background:var(--accent);border-radius:50%}
+.item h3{font-size:1.4rem;font-weight:600}
+.meta{margin:.2rem 0 .5rem;color:var(--muted);font-size:.98rem}
+.item ul{margin:.4rem 0 0;padding-left:1.1rem;max-width:68ch}
+.item li{margin:.25rem 0}
+.item p{margin:.4rem 0 0;max-width:68ch}
+.item p.desc{color:var(--muted);margin:0 0 .3rem}
+
+.cat{font-size:1.2rem;font-weight:600;color:var(--muted);margin:1.8rem 0 .9rem}
+.cat:first-of-type{margin-top:0}
+footer{grid-column:1/-1;color:var(--muted);font-size:.9rem;padding-top:1rem;border-top:1px solid var(--line)}
+
+@media (max-width:820px){
+  .page{grid-template-columns:1fr;gap:1.5rem}
+  .side{position:static}
+  .side h1{font-size:2.5rem}
+}
+@media print{
+  :root{--bg:#fff;--surface:#fff;--ink:#000;--muted:#333;--line:#bbb;--accent:#000;--tag:#eee}
+  .page{padding:0;gap:1.5rem;grid-template-columns:240px 1fr}
+  .side{position:static}
+  .item{break-inside:avoid}
+  footer{display:none}
+  a{text-decoration:none}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- ===================== COLUMNA IZQUIERDA ===================== -->
+  <aside class="side">
+    <!-- ✏️ 2. Nombre y título -->
+    <h1>Matías Farías Flores</h1>
+    <p class="role">Estudiante de Ingeniería Civil Industrial</p>
+
+    <!-- ✏️ 3. Contacto. Para LinkedIn, copia la URL exacta desde tu perfil -->
+    <ul class="contact">
+      <li><a href="mailto:m.farias02@ufromail.cl">m.farias02@ufromail.cl</a></li>
+      <li><a href="https://www.linkedin.com/in/matías-farías-flores-725a80404">linkedin.com/in/matías-farías-flores</a></li>
+      <li><a href="https://github.com/mfarias02-cmyk">github.com/mfarias02-cmyk</a></li>
+      <li>+56 9 6454 1642</li>
+      <li>Temuco, Chile</li>
+    </ul>
+
+    <h2>Habilidades</h2>
+    <!-- ✏️ 4. Deja solo lo que realmente dominas. Para agregar una: copia una línea <li>…</li> -->
+    <p class="group">Liderazgo y gestión de equipos</p>
+    <ul class="tags"><li>Liderazgo de equipos</li><li>Planificación y calendarios</li><li>Asignación de tareas</li><li>Coordinación de voluntarios</li><li>Comunicación</li></ul>
+    <p class="group">Marketing digital</p>
+    <ul class="tags"><li>Community management</li><li>Gestión de redes sociales</li><li>Identidad visual y branding</li><li>Estrategia de contenido</li></ul>
+    <p class="group">Diseño y producción audiovisual</p>
+    <ul class="tags"><li>Photoshop</li><li>Illustrator</li><li>Premiere</li><li>CapCut</li><li>Canva</li><li>Fotografía</li></ul>
+    <p class="group">Gestión y ofimática</p>
+    <ul class="tags"><li>Notion</li><li>ManyChat</li><li>Excel</li><li>Google Sheets</li><li>Google Drive</li><li>Herramientas de IA</li></ul>
+
+    <h2>Idiomas</h2>
+    <!-- ✏️ 5. Idiomas y nivel -->
+    <ul class="plain">
+      <li>Español: nativo</li>
+      <li>Inglés: básico</li>
+    </ul>
+  </aside>
+
+  <!-- ===================== COLUMNA DERECHA ===================== -->
+  <main>
+
+    <section id="perfil">
+      <h2>Perfil</h2>
+      <!-- ✏️ 6. Perfil: 3 a 4 líneas -->
+      <p class="profile">Estudiante de 4to año de Ingeniería Civil Industrial en la Universidad de La Frontera, con experiencia liderando equipos de comunicación y marketing digital en el CEE, el capítulo IISE y CUVI, y coordinando voluntarios en terreno. Me caracterizo por la planificación, la organización de equipos y la creación de contenido audiovisual, y busco aplicarlas en una práctica profesional.</p>
+    </section>
+
+    <section id="educacion">
+      <h2>Educación</h2>
+      <div class="timeline">
+        <!-- ✏️ 7. Para agregar otro estudio: copia desde <article> hasta </article> -->
+        <article class="item">
+          <h3>Ingeniería Civil Industrial</h3>
+          <p class="meta">Universidad de La Frontera · 2023 – presente</p>
+          <ul>
+            <li>Ramos relevantes: Investigación de Operaciones, Taller de Análisis de Datos, Formulación y Evaluación de Proyectos</li>
+            <li>Minor en Emprendimiento (en curso, finaliza el segundo semestre de 2026)</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="extracurricular">
+      <h2>Actividades extracurriculares</h2>
+      <!-- ✏️ 8. Cada categoría tiene su título (<h3 class="cat">). Para agregar una actividad, copia un bloque <article> -->
+
+      <h3 class="cat">Representación estudiantil</h3>
+      <div class="timeline">
+        <article class="item">
+          <h3>Delegado de Comunicaciones</h3>
+          <p class="meta">Centro de Estudiantes de Ingeniería Civil Industrial (CEE) · 2024 – 2025 · <a href="https://www.instagram.com/industrializa2">Instagram</a></p>
+          <p class="desc">Organiza actividades de recreación y cursos de herramientas, como Excel, para la comunidad estudiantil.</p>
+          <ul>
+            <li>Planifiqué el calendario de contenidos en redes sociales, trabajando en un equipo de 2 personas.</li>
+            <li>Diseñé publicaciones y produje videos para informar a la comunidad estudiantil.</li>
+            <li>Definí la línea visual del CEE, lo que ordenó el feed y mejoró la coherencia de la cuenta.</li>
+            <li>Difundí las votaciones estudiantiles, que alcanzaron entre un 80 % y un 90 % de participación en una carrera de más de 400 estudiantes.</li>
+            <li>Herramientas: Canva, Photoshop, Premiere y CapCut.</li>
+          </ul>
+        </article>
+      </div>
+
+      <h3 class="cat">Organizaciones y comités</h3>
+      <div class="timeline">
+        <article class="item">
+          <h3>Encargado del comité de difusión y diseño gráfico, congreso CITIC</h3>
+          <p class="meta">Capítulo 597 IISE UFRO (Institute of Industrial and Systems Engineers) · Nov 2024 – Ago 2025</p>
+          <p class="desc">Realiza actividades para la comunidad estudiantil de Ingeniería Civil Industrial.</p>
+          <ul>
+            <li>Lideré el equipo de difusión y comunicación (3 personas) dentro de un comité organizador de 25 personas.</li>
+            <li>Planifiqué el calendario de publicaciones del congreso.</li>
+            <li>Creé la línea visual completa del congreso: videos, publicaciones y gráficas.</li>
+            <li>Tomé fotografías del evento y desarrollé una página web para que los asistentes descargaran las imágenes.</li>
+            <li>Logré una cuenta de Instagram con más de 300 seguidores y alcance a casas de estudios nacionales e internacionales.</li>
+            <li>Herramientas: Photoshop, Illustrator, Premiere, CapCut y Canva.</li>
+          </ul>
+        </article>
+        <article class="item">
+          <h3>Coordinador de Marketing Digital</h3>
+          <p class="meta">Capítulo Universitario de Vinculación Industrial (CUVI) · Mar – Oct 2026 · <a href="https://www.instagram.com/cuvi.ufro">Instagram</a></p>
+          <p class="desc">Capítulo nacido de la alianza entre el Colegio de Ingenieros de Chile y CONDEFI. Fomenta la vinculación temprana entre estudiantes y el mundo profesional, principalmente para sus socios.</p>
+          <ul>
+            <li>Creé la identidad visual completa del capítulo: logos, paleta de colores y lineamientos de marca.</li>
+            <li>Lideré el comité de difusión de 12 personas, con calendarios de publicaciones y asignación de tareas y responsabilidades.</li>
+            <li>Produje videos, publicaciones y gráficas, y creé la cuenta de Instagram, que superó los 300 seguidores. Cerca del 80 % de las publicaciones de la cuenta son creaciones mías.</li>
+            <li>Participé en la organización del <a href="https://diarioelcautin.cl/ufro-sera-sede-del-congreso-cegid-encuentro-nacional-de-ingenieria-de-caracter-gratuito-abre-sus-postulaciones/">Congreso CEGID</a> (Enlace, Gestión de Industria y Desarrollo), encuentro nacional gratuito realizado en la UFRO del 21 al 23 de octubre de 2026, con más de 130 asistentes.</li>
+            <li>Herramientas: Photoshop, Illustrator, CapCut, Canva, ManyChat, Notion y Google Drive.</li>
+          </ul>
+        </article>
+      </div>
+
+      <h3 class="cat">Voluntariado</h3>
+      <div class="timeline">
+        <article class="item">
+          <h3>Voluntario y encargado de ruta calle</h3>
+          <p class="meta">Fundación Apapachos Chile · Ago 2025 – presente</p>
+          <p class="desc">Organiza campañas y actividades de ayuda para personas en situación de calle y vulnerabilidad.</p>
+          <ul>
+            <li>Coordino entre 15 y 25 voluntarios para entregar 40 cenas en 5 horas, visitando más de 15 puntos por ruta.</li>
+            <li>Defino los puntos de la ruta, asigno responsables y tomo decisiones operativas en terreno.</li>
+            <li>Contribuyo a estructurar la fundación en su etapa de crecimiento, definiendo roles por área para un equipo de 40 personas y elaborando calendarios de planificación.</li>
+            <li>Gestiono el contenido audiovisual y las redes sociales, como Instagram.</li>
+            <li>Herramientas: Excel, Google Sheets, Word y herramientas de IA.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="experiencia">
+      <h2>Experiencia laboral</h2>
+      <div class="timeline">
+        <!-- ✏️ 9. Si recuerdas los años de cada trabajo, agrégalos en la línea de "meta" -->
+        <article class="item">
+          <h3>Audiovisualista</h3>
+          <p class="meta">Cooltura Experiences · Desde mayo 2024</p>
+          <ul>
+            <li>Creé los videos de las capacitaciones y cursos que realiza la empresa.</li>
+          </ul>
+        </article>
+        <article class="item">
+          <h3>Socio y creador de contenido digital</h3>
+          <p class="meta">Agencia Clab · 2024</p>
+          <ul>
+            <li>Trabajé en conjunto con mi socio, en una agencia de 2 personas.</li>
+            <li>Creé contenido digital para pymes: gráficas, videos y manejo de redes sociales.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="reconocimientos">
+      <h2>Reconocimientos y formación complementaria</h2>
+      <div class="timeline">
+        <article class="item">
+          <h3>3er lugar a nivel nacional, Rally Latinoamericano de Innovación</h3>
+          <p class="meta">Equipo FIQUITOS · 2026 · <a href="https://youtu.be/ACX36uWRNjY">Ver video del proyecto</a></p>
+          <ul>
+            <li>Creé el video de presentación del proyecto del equipo.</li>
+          </ul>
+        </article>
+        <article class="item">
+          <h3>Minor en Emprendimiento</h3>
+          <p class="meta">Universidad de La Frontera · 2024 – 2026 (en curso)</p>
+        </article>
+        <article class="item">
+          <h3>Primeros auxilios, RCP y control de hemorragias</h3>
+          <p class="meta">Certificación · RNE Araucanía · 5 de julio</p>
+        </article>
+        <article class="item">
+          <h3>Talleres de Alumni UFRO</h3>
+          <p class="meta">Universidad de La Frontera</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="comunidad">
+      <h2>Liderazgo comunitario</h2>
+      <!-- ✏️ 10. Liderazgo comunitario: agrega o ajusta cargos y años copiando un bloque <article> -->
+      <div class="timeline">
+        <article class="item">
+          <h3>Tesorero y líder de jóvenes</h3>
+          <p class="meta">Comunidad Iglesia Evangélica Nacional · Convención General CIEN</p>
+          <ul>
+            <li>Tesorero de la Convención General CIEN (2025 – presente).</li>
+            <li>Tesorero de la Unión de Jóvenes de la comunidad (2023 – 2025).</li>
+            <li>Líder de jóvenes (2023).</li>
+          </ul>
+        </article>
+        <article class="item">
+          <h3>Fotografía y producción audiovisual</h3>
+          <p class="meta">Comunidad Iglesia Evangélica Nacional · Agencia Proyeczion</p>
+          <ul>
+            <li>Desarrollé trabajo de fotografía y creación de contenido, y manejé un programa transmitido por YouTube.</li>
+            <li>Fotógrafo en la agencia Proyeczion, en Temuco.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>Última actualización: octubre de 2026</footer>
+</div>
+</body>
+</html>

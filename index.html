@@ -32,6 +32,7 @@ h1,h2,h3{font-family:var(--font-title);line-height:1.1;margin:0}
 /* ---------- Columna izquierda ---------- */
 .side{position:sticky;top:2rem;align-self:start}
 .side h1{font-size:2.9rem;font-weight:700;letter-spacing:.01em}
+.foto{width:150px;height:150px;border-radius:50%;object-fit:cover;display:block;margin:0 0 1.2rem;border:3px solid var(--accent)}
 .role{margin:.6rem 0 1.5rem;color:var(--muted);font-size:1.05rem}
 .side h2{font-size:1.35rem;font-weight:600;margin:1.8rem 0 .6rem;padding-top:1rem;border-top:2px solid var(--ink)}
 .contact,.plain{list-style:none;margin:0;padding:0}
@@ -83,6 +84,7 @@ footer{grid-column:1/-1;color:var(--muted);font-size:.9rem;padding-top:1rem;bord
   <!-- ===================== COLUMNA IZQUIERDA ===================== -->
   <aside class="side">
     <!-- ✏️ 2. Nombre y título -->
+    <img class="foto" src="foto.jpg" alt="Foto de Matías Farías Flores" onerror="this.style.display='none'">
     <h1>Matías Farías Flores</h1>
     <p class="role">Estudiante de Ingeniería Civil Industrial</p>
 

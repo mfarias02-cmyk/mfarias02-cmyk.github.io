@@ -146,7 +146,6 @@ footer{grid-column:1/-1;color:var(--muted);font-size:.9rem;padding-top:1rem;bord
     </div>
   </div>
 </header>
-
 <div class="page">
 
   <!-- ===================== COLUMNA IZQUIERDA ===================== -->
@@ -196,7 +195,6 @@ footer{grid-column:1/-1;color:var(--muted);font-size:.9rem;padding-top:1rem;bord
       <span class="spacer"></span>
       <button class="btn" id="clear" type="button">Quitar filtro</button>
     </div>
-
     <section id="perfil">
       <h2>Perfil</h2>
       <!-- ✏️ 6. Perfil: 3 a 4 líneas -->
@@ -220,7 +218,6 @@ footer{grid-column:1/-1;color:var(--muted);font-size:.9rem;padding-top:1rem;bord
 
     <section id="extracurricular">
       <h2>Actividades extracurriculares</h2>
-
       <!-- Botones de filtro por categoría -->
       <div class="toolbar" role="group" aria-label="Filtrar por categoría">
         <button class="chip" type="button" data-filter="all" aria-pressed="true">Todas</button>
@@ -307,12 +304,15 @@ footer{grid-column:1/-1;color:var(--muted);font-size:.9rem;padding-top:1rem;bord
           </article>
         </div>
       </div>
+      </div>
     </section>
 
     <section id="experiencia">
       <h2>Experiencia laboral</h2>
       <div class="timeline">
         <!-- ✏️ 9. Si recuerdas los años de cada trabajo, agrégalos en la línea de "meta" -->
+        <article class="item">
+          <h3>Audiovisualista</h3>
         <article class="item">
           <h3>Audiovisualista</h3>
           <p class="meta">Cooltura Experiences · May 2024 – Ene 2026</p>
@@ -322,6 +322,10 @@ footer{grid-column:1/-1;color:var(--muted);font-size:.9rem;padding-top:1rem;bord
             </ul>
           </div>
         </article>
+        </article>
+        <article class="item">
+          <h3>Socio y creador de contenido digital</h3>
+          <p class="meta">Agencia Clab · 2024</p>
         <article class="item">
           <h3>Socio y creador de contenido digital</h3>
           <p class="meta">Agencia Clab · 2024</p>
@@ -331,6 +335,7 @@ footer{grid-column:1/-1;color:var(--muted);font-size:.9rem;padding-top:1rem;bord
               <li>Creé contenido digital para pymes: gráficas, videos y manejo de redes sociales.</li>
             </ul>
           </div>
+        </article>
         </article>
       </div>
     </section>
@@ -357,7 +362,6 @@ footer{grid-column:1/-1;color:var(--muted);font-size:.9rem;padding-top:1rem;bord
 
   <footer>Última actualización: octubre de 2026</footer>
 </div>
-
 <button class="top" id="top" type="button" aria-label="Volver arriba">↑</button>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
